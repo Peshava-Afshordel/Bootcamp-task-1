@@ -58,6 +58,14 @@ h3 {
   justify-items: center;
 }
 
+/* container */
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
 /* card item */
 .card-item {
   width: 400px;
@@ -151,25 +159,19 @@ h3 {
   .card-plan {
     grid-template-columns: repeat(2, 1fr);
   }
-  .card-item {
-    width: 400px;
-  }
 }
 
 @media screen and (min-width: 1224px) {
   .card-plan {
     grid-template-columns: repeat(3, 1fr);
   }
-  .container {
-    display: block;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-  }
 }
 
 @media screen and (max-width: 400px) {
   .card-item {
     width: calc(400px - 12rem);
+  }
+  .title {
+    font-size: 1.5rem;
   }
 }
